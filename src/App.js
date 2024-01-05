@@ -1,7 +1,6 @@
 import Page from "./Page";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
-import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         pauseOnHover
         theme="colored"
       />
-      <Footer />
     </>
   );
 }

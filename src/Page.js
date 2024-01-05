@@ -7,6 +7,7 @@ import ViewModal from "./Components/ViewModal";
 import { useSelector } from "react-redux";
 import { getAllNotes } from "./noteslice";
 import Prompt from "./Components/Prompt";
+import Footer from "./Components/Footer";
 const Page = () => {
   const [search, setSearch] = useState("");
   const [showModal, setShowModal] = useState(false);
@@ -69,7 +70,7 @@ const Page = () => {
           </div>
         </>
       )}
-
+      <Footer />
       {showModal && <Modal closeModal={closeModal} />}
       {showEditModal && (
         <EditModal closeEditModal={closeEditModal} id={editId} />
