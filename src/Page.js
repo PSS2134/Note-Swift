@@ -77,7 +77,6 @@ const Page = () => {
       {showViewModal && (
         <ViewModal closeViewModal={closeViewModal} id={viewId} />
       )}
-
     </div>
   );
 };
