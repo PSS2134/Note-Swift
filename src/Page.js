@@ -50,7 +50,7 @@ const Page = () => {
     <div>
       <Banner openModal={openModal} Searching={Searching} />
       {!filteredNotes[0] ? (
-        <h1 className="text-[2rem] md:text-[2.5rem] text-center pt-[15vh] md:pt-[30vh] pb-[10vh] font-semibold bg-slate-50">
+        <h1 className="text-[2rem] md:text-[2.5rem] text-center pt-[15vh] md:pt-[15vh] pb-[10vh] font-semibold bg-slate-50">
           No Notes Found !
         </h1>
       ) : (
