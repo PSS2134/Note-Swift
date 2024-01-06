@@ -9,7 +9,7 @@ const Notecard = ({ title, body, id, date, openEditModal, openViewModal }) => {
   };
   return (
     <>
-      <div className="m-10 p-5 shadow-md rounded-lg shadow-black h-[62vh] bg-white w-[25%] z-0 relative">
+      <div className="ml-2 my-10  md:m-10 p-5 shadow-md rounded-lg shadow-black h-[72vh] md:h-[62vh] bg-white w-[98%] md:w-[25%] z-0 relative">
         <img
           className="float-right mb-3 ml-2 h-[4.8vh] cursor-pointer active:shadow-none hover:scale-[110%] hover:ease-out hover:delay-100"
           src={dele}
@@ -27,14 +27,14 @@ const Notecard = ({ title, body, id, date, openEditModal, openViewModal }) => {
         </div>
         {(title.length > 22 || body.length > 175) && (
           <p
-            className="m-2 text-xl text-purple-700 font-medium cursor-pointer absolute bottom-16 "
+            className="m-2 text-lg md:text-xl text-purple-700 font-medium cursor-pointer absolute bottom-16 "
             onClick={() => openViewModal(id)}
           >
             <i className="hover:underline">View More</i>
           </p>
         )}
         <img
-          className="float-right m-1 h-[6.5vh] shadow-md shadow-black rounded-full cursor-pointer active:shadow-none hover:scale-[110%] hover:ease-out hover:delay-100 absolute bottom-16 right-8"
+          className="float-right m-1 h-[6.5vh] shadow-md shadow-black rounded-full cursor-pointer active:shadow-none hover:scale-[110%] hover:ease-out hover:delay-100 absolute bottom-8 right-4 md:bottom-16 md:right-8"
           src={edit}
           key={id}
           onClick={() => openEditModal(id)}

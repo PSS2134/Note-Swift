@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <footer class="flex flex-col space-y-10 justify-center p-10 bg-black">
         <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
-          <a class="text-yellow-400 text-xl">
+          <a class="text-yellow-400 text-lg md:text-xl">
             " We Care for your <i>Notes</i> "
           </a>
         </nav>
