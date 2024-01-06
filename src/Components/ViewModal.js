@@ -17,7 +17,7 @@ const ViewModal = ({ closeViewModal, id }) => {
 
   return (
     <div className="flex justify-center items-center fixed top-0 right-0 left-0 backdrop-blur-sm h-screen">
-      <div className="h-[90vh] w-[60%] p-[5vh] m-5 bg-slate-100 rounded-md shadow-md shadow-black backdrop-blur-3xl">
+      <div className="h-[98vh] w-[96%] p-5 md:w-[60%] md:p-[2vh] md:px-[5vh] m-5 bg-slate-100 rounded-md shadow-md shadow-black backdrop-blur-3xl">
         <img
           src={cross}
           onClick={() => {

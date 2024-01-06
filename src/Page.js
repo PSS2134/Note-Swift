@@ -50,13 +50,13 @@ const Page = () => {
     <div>
       <Banner openModal={openModal} Searching={Searching} />
       {!filteredNotes[0] ? (
-        <h1 className="text-[3rem] text-center mt-[30vh] pb-[10vh] font-semibold bg-slate-50">
+        <h1 className="text-[2rem] md:text-[2.5rem] text-center pt-[15vh] md:pt-[15vh] pb-[10vh] font-semibold bg-slate-50">
           No Notes Found !
         </h1>
       ) : (
         <>
           {" "}
-          <div className="pt-[35vh] bg-slate-50 flex justify-between flex-wrap  px-10">
+          <div className=" bg-slate-50 flex flex-col md:flex-row justify-between flex-wrap  md:px-10 sm:px-5">
             {filteredNotes.map((note) => (
               <Notecard
                 title={note.Title}
