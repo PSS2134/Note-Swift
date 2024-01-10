@@ -40,7 +40,7 @@ const Notecard = ({ title, body, id, date, openEditModal, openViewModal }) => {
           onClick={() => openEditModal(id)}
         />
         <p className="absolute bottom-1 m-2 text-lg font-medium text-gray-500">
-          {date.slice(0, 11)}
+          {date.slice(0, 12)}
         </p>
       </div>
       <div className="overflow-hidden fixed">
