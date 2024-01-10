@@ -57,7 +57,7 @@ const Page = () => {
         <>
           {" "}
           <div className=" bg-slate-50 flex flex-col md:flex-row justify-between flex-wrap  md:px-10 sm:px-5">
-            {filteredNotes.map((note) => (
+            {filteredNotes.toReversed().map((note) => (
               <Notecard
                 title={note.Title}
                 body={note.Body}
